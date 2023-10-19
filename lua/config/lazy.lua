@@ -62,10 +62,10 @@ require('lazy').setup({
     'lewis6991/gitsigns.nvim',
 
   {
-    'rebelot/kanagawa.nvim',
+    'sainnhe/gruvbox-material',
     priority = 1000,
     config = function()
-      vim.cmd.colorscheme 'kanagawa-dragon'
+      vim.cmd.colorscheme 'gruvbox-material'
     end,
   },
 
