@@ -1,2 +1,2 @@
-## My neovim configuration based on kickstarter nvim
+## My neovim configuration based on [kickstart nvim](https://github.com/nvim-lua/kickstart.nvim)
 
