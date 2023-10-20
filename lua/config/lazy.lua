@@ -24,6 +24,13 @@ require('lazy').setup({
 
   'theprimeagen/harpoon',
 
+  'nvim-lualine/lualine.nvim',
+  'nvim-tree/nvim-web-devicons',
+
+  'christoomey/vim-tmux-navigator',
+
+  'laytan/cloak.nvim',
+
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
   {
@@ -69,10 +76,13 @@ require('lazy').setup({
     end,
   },
 
-    'nvim-lualine/lualine.nvim',
-    'nvim-tree/nvim-web-devicons',
-
-    'christoomey/vim-tmux-navigator',
+  {
+    "ThePrimeagen/refactoring.nvim",
+    dependencies = {
+      "nvim-lua/plenary.nvim",
+      "nvim-treesitter/nvim-treesitter",
+    },
+  },
 
   {
     -- Add indentation guides even on blank lines
@@ -112,6 +122,7 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     dependencies = {
       'nvim-treesitter/nvim-treesitter-textobjects',
+      'nvim-treesitter/nvim-treesitter-context',
     },
     build = ':TSUpdate',
   },
@@ -161,11 +172,11 @@ require('lazy').setup({
     opts = {},
     -- stylua: ignore
     keys = {
-      { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
-      { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
-      { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
-      { "R", mode = { "o", "x" }, function() require("flash").treesitter_search() end, desc = "Treesitter Search" },
-      { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
+      -- { "s", mode = { "n", "x", "o" }, function() require("flash").jump() end, desc = "Flash" },
+      -- { "S", mode = { "n", "x", "o" }, function() require("flash").treesitter() end, desc = "Flash Treesitter" },
+      -- { "r", mode = "o", function() require("flash").remote() end, desc = "Remote Flash" },
+
+      -- { "<c-s>", mode = { "c" }, function() require("flash").toggle() end, desc = "Toggle Flash Search" },
     },
   }
 }, {})
