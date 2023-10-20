@@ -29,8 +29,6 @@ require('lazy').setup({
 
   'christoomey/vim-tmux-navigator',
 
-  'laytan/cloak.nvim',
-
   -- NOTE: This is where your plugins related to LSP can be installed.
   --  The configuration is done below. Search for lspconfig to find it below.
   {
@@ -76,13 +74,6 @@ require('lazy').setup({
     end,
   },
 
-  {
-    "ThePrimeagen/refactoring.nvim",
-    dependencies = {
-      "nvim-lua/plenary.nvim",
-      "nvim-treesitter/nvim-treesitter",
-    },
-  },
 
   {
     -- Add indentation guides even on blank lines
