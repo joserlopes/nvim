@@ -1,6 +1,8 @@
 return {
 	"christoomey/vim-tmux-navigator",
 
+	"RRethy/vim-illuminate",
+
 	{
 		"sainnhe/gruvbox-material",
 		priority = 1000,
