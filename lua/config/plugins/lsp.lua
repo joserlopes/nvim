@@ -82,7 +82,11 @@ return {
 			clangd = {},
 			gopls = {},
 			pyright = {},
-			rust_analyzer = {},
+			rust_analyzer = {
+				checkOnSave = {
+					command = "clippy",
+				},
+			},
 			tsserver = {},
 			html = { filetypes = { "html", "twig", "hbs" } },
 
