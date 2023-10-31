@@ -1,0 +1,16 @@
+stdpath
+LSPs
+neovim
+LSP
+nvim
+mason-lspconfig
+config
+filetypes
+nvim-cmp
+cmp.visible
+elseif
+luasnip.expand
+cmp.select
+cmp.mapping
+keymap
+jumpable
