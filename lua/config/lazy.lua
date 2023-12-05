@@ -25,3 +25,4 @@ require("lazy").setup({ { import = "config.plugins" } }, {
 })
 
 vim.keymap.set("n", "<leader>zz", "<cmd>:Lazy<cr>", { desc = "Manage Plugins" })
+
