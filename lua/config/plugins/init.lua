@@ -5,15 +5,49 @@ return {
 
 	"RRethy/vim-illuminate",
 
-	{
-		"sainnhe/gruvbox-material",
-		priority = 1000,
-		config = function()
-			vim.cmd.colorscheme("gruvbox-material")
-            -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
-            -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
-		end,
-	},
+	-- {
+	-- 	"sainnhe/gruvbox-material",
+	-- 	priority = 1000,
+	-- 	config = function()
+	-- 		vim.cmd.colorscheme("gruvbox-material")
+	-- 	end,
+	-- },
+
+    {
+        "rebelot/kanagawa.nvim",
+        priority = 1000,
+        config = function ()
+            require("kanagawa").setup({
+                transparent = true,
+                theme = "dragon",
+            })
+            vim.cmd.colorscheme("kanagawa-dragon")
+        end
+    },
+
+    -- {
+    --     "folke/tokyonight.nvim",
+    --     priority = 1000,
+    --     config = function ()
+    --         vim.cmd.colorscheme("tokyonight-night")
+    --     end
+    -- },
+
+    -- {
+    --     "catppuccin/nvim",
+    --     priority = 1000,
+    --     config = function ()
+    --         vim.cmd.colorscheme "catppuccin-macchiato"
+    --     end,
+    -- },
+
+    -- {
+    --     "rose-pine/neovim",
+    --     priority = 1000,
+    --     config = function ()
+    --         vim.cmd.colorscheme "rose-pine"
+    --     end,
+    -- },
 
 	{
 		-- Add indentation guides even on blank lines
