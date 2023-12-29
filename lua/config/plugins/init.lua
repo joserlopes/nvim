@@ -5,25 +5,27 @@ return {
 
 	"RRethy/vim-illuminate",
 
-	-- {
-	-- 	"sainnhe/gruvbox-material",
-	-- 	priority = 1000,
-	-- 	config = function()
-	-- 		vim.cmd.colorscheme("gruvbox-material")
-	-- 	end,
-	-- },
+    "github/copilot.vim",
 
-    {
-        "rebelot/kanagawa.nvim",
-        priority = 1000,
-        config = function ()
-            require("kanagawa").setup({
-                transparent = true,
-                theme = "dragon",
-            })
-            vim.cmd.colorscheme("kanagawa-dragon")
-        end
-    },
+	{
+		"sainnhe/gruvbox-material",
+		priority = 1000,
+		config = function()
+			vim.cmd.colorscheme("gruvbox-material")
+		end,
+	},
+
+    -- {
+    --     "rebelot/kanagawa.nvim",
+    --     priority = 1000,
+    --     config = function ()
+    --         require("kanagawa").setup({
+    --             transparent = true,
+    --             theme = "dragon",
+    --         })
+    --         vim.cmd.colorscheme("kanagawa-dragon")
+    --     end
+    -- },
 
     -- {
     --     "folke/tokyonight.nvim",

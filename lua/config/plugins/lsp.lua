@@ -48,7 +48,7 @@ return {
 			nmap("K", vim.lsp.buf.hover, "Hover Documentation")
 			vim.keymap.set("i", "<C-h>", function()
 				vim.lsp.buf.signature_help()
-			end)
+			end, { desc =  "LSP: Signature Help" })
 
 			-- Lesser used LSP functionality
 			nmap("gD", vim.lsp.buf.declaration, "[G]oto [D]eclaration")
@@ -87,6 +87,7 @@ return {
 			rust_analyzer = {},
 			tsserver = {},
 			html = { filetypes = { "html", "twig", "hbs" } },
+            ocamllsp = {},
 
 			lua_ls = {
 				Lua = {
